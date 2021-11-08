@@ -46,7 +46,7 @@ const NewSurvey = props => {
     // props.onAddsurvey(NewSurvey);
     dispatchHook(addSurvey(NewSurvey));
     }      
-    history.push('/');
+    history.push('/surveys-redux');
   };
   const textChangeHandler = event => {
     setEnteredText(event.target.value);
@@ -83,7 +83,7 @@ const NewSurvey = props => {
       <div className="container">
       <div className="row">
         <div className="col-md-3">         
-          <button className="btn btn-light btn-block" onClick={()=>history.push('/')}> <i className="fas fa-arrow-left"></i> Cancel</button>    
+          <button className="btn btn-light btn-block" onClick={()=>history.push('/surveys-redux')}> <i className="fas fa-arrow-left"></i> Cancel</button>    
         </div>
         <div className="col-md-3">        
         <button className="btn btn-success btn-block" type="submit" disabled={(!enteredText&&selected.length>0)||selected.length===0}>Save</button>      

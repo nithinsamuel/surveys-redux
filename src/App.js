@@ -27,16 +27,16 @@ const App = () => {
       <Router>
         <Switch>
           {/* home page */}
-        <Route exact path="/" 
+        <Route exact path="/surveys-redux" 
         render={(props)=><SurveyList 
         {...props}/>}/>  
         {/* add new survey*/}
-          <Route exact path="/addNewSurvey" 
+          <Route exact path="/surveys-redux/addNewSurvey" 
           render={(props)=><NewSurvey          
           MultiSelectValues={MultiSelectValues}
           {...props}/>}/>      
           {/* edit survey*/}
-          <Route exact path="/editSurvey/:surveyId" 
+          <Route exact path="/surveys-redux/editSurvey/:surveyId" 
           render={(props)=><NewSurvey          
           findUserHandler={findUserHandler} 
           MultiSelectValues={MultiSelectValues}

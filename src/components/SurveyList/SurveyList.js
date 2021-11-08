@@ -16,11 +16,11 @@ const SurveyList = (props) => {
   },[surveys])
   // Add New Survey
   const addNewHandler=()=>{
-    history.push('/addNewSurvey');
+    history.push('/surveys-redux/addNewSurvey');
   }
   // Edit Survey
   const editHandler=()=>{
-    history.push(`/editSurvey/${surveyId}`);
+    history.push(`/surveys-redux/editSurvey/${surveyId}`);
   }
 // //  Delete Survey
 const deleteHandler=()=>{
